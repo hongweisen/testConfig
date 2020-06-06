@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: project-user
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/test
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: weisen
+  jpa:
+    database: MYSQL
+    dialect: org.hibernate.dialect.MySQLDialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
