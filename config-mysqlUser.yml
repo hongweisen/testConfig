@@ -3,10 +3,16 @@ spring:
     name: project-user
 
   datasource:
-    url: jdbc:mysql://localhost:3306/test
-    driver-class-name: com.mysql.jdbc.Driver
-    username: root
-    password: weisen
+    primary:
+      url: jdbc:mysql://localhost:3306/test
+      driver-class-name: com.mysql.jdbc.Driver
+      username: root
+      password: weisen
+    secondary:
+      url: jdbc:mysql://localhost:3306/project-dev
+      driver-class-name: com.mysql.jdbc.Driver
+      username: root
+      password: weisen
   jpa:
     database: MYSQL
     dialect: org.hibernate.dialect.MySQLDialect
