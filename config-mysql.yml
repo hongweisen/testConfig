@@ -1,12 +1,12 @@
 spring:
   datasource:
     primary:
-      url: jdbc:mysql://localhost:3306/test
+      url: jdbc:mysql://localhost:3306/project-dev
       driver-class-name: com.mysql.jdbc.Driver
       username: root
       password: weisen
     secondary:
-      url: jdbc:mysql://localhost:3306/project-dev
+      url: jdbc:mysql://localhost:3306/test
       driver-class-name: com.mysql.jdbc.Driver
       username: root
       password: weisen
